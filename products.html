@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header><h1>Products</h1></header>
+
+<div class="card-container">
+
+<div class="card">
+<img src="images/products/macbook.jpg">
+<h3>MacBook Pro</h3>
+<p>₹2,10,000</p>
+</div>
+
+<div class="card">
+<img src="images/products/dell.jpg">
+<h3>Dell Laptop</h3>
+<p>₹85,000</p>
+</div>
+
+<div class="card">
+<img src="images/products/ssd.jpg">
+<h3>SSD 1TB</h3>
+<p>₹8,000</p>
+</div>
+
+</div>
+
+<section>
+<h2>Purchase Inquiry</h2>
+
+<form action="backend/product_query.php" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="text" name="product" placeholder="Product Name" required>
+<textarea name="message" placeholder="Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+
+</section>
+
+</body>
+</html>

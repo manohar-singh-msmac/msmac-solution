@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Service & Repair</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header><h1>Repair & Support</h1></header>
+
+<ul>
+<li>MacBook Repair</li>
+<li>Windows Laptop Repair</li>
+<li>Motherboard Repair</li>
+<li>Data Recovery</li>
+<li>OS Installation</li>
+</ul>
+
+<section>
+<h2>Service Request</h2>
+
+<form action="backend/service_query.php" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="text" name="device" placeholder="Device Type">
+<textarea name="issue" placeholder="Describe Issue"></textarea>
+<button type="submit">Submit</button>
+</form>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+body {
+font-family: Arial;
+margin:0;
+text-align:center;
+}
+
+/* Header */
+header {
+background:#111;
+color:white;
+padding:20px;
+}
+
+/* Logo */
+.logo-container {
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:10px;
+}
+
+.logo-container img {
+height:70px;
+width:auto;
+object-fit:contain;
+}
+
+/* Navigation */
+nav a {
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Hero Section */
+.hero {
+background:#0073e6;
+color:white;
+padding:50px 20px;
+}
+
+/* Sections */
+section {
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px 0;
+}
+
+/* Cards Layout */
+.card-container {
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* Card Design */
+.card {
+border:1px solid #ddd;
+padding:15px;
+width:250px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover {
+transform:translateY(-5px);
+box-shadow:0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Images */
+.card img {
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+/* Button */
+.btn {
+background:#0073e6;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+display:inline-block;
+margin:20px auto;
+}
+
+/* Footer */
+footer {
+background:#111;
+color:white;
+padding:15px;
+margin-top:20px;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+.card {
+width:90%;
+}
+.hero {
+padding:30px 15px;
+}
+}
+
+/* Services Video Background */
+.services-section {
+position:relative;
+width:100%;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.bg-video {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+filter:brightness(50%);
+}
+
+.services-content {
+position:relative;
+z-index:1;
+padding:40px 0;
+color:white;
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* Owner Section */
+.owner-card {
+max-width:500px;
+border:1px solid #ddd;
+padding:25px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+border-radius:8px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.owner-card img {
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.role {
+font-weight:bold;
+color:#0073e6;
+margin:0;
+}
+
+.about-text {
+line-height:1.6;
+}
+
+/* About Section Layout */
+.about-container {
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+max-width:900px;
+padding:20px;
+flex-wrap:wrap;
+}
+
+/* Text side */
+.about-text-block {
+flex:1;
+min-width:280px;
+text-align:left;
+}
+
+.about-text-block .role {
+font-weight:bold;
+color:#0073e6;
+margin:5px 0 10px 0;
+}
+
+/* Image side */
+.about-image {
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.about-image img {
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width:768px){
+.about-container {
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.about-text-block {
+text-align:center;
+}
+}
