@@ -3,30 +3,46 @@
 <head>
 <title>Products</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .back-button{position:fixed;left:12px;top:12px;padding:8px 12px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px;font-weight:600}
+  .back-button:hover{opacity:0.9}
+</style>
 </head>
 
 <body>
 
-<header><h1>Products</h1></header>
+<header>
+  <a href="index.html" class="back-button">← Back</a>
+  <h1>Products</h1>
+</header>
 
 <div class="card-container">
 
 <div class="card">
 <img src="images/products/macbook.jpg">
 <h3>MacBook Pro</h3>
-<p>₹2,10,000</p>
+<p>₹1,69,900</p>
+<p>Contact for more details and discount.</p>
 </div>
 
 <div class="card">
-<img src="images/products/dell.jpg">
-<h3>Dell Laptop</h3>
-<p>₹85,000</p>
+<img src="images/products/window1.jpg">
+<h3>Windows Laptop</h3>
+<p>₹35,000</p>
+<p>Contact for more details and discount.</p>
+</div>
+
+<div class="card">
+<img src="images/products/accessory.jpg">
+<h3>Accessories</h3>
+<p>₹50 Onwards.</p>
 </div>
 
 <div class="card">
 <img src="images/products/ssd.jpg">
 <h3>SSD 1TB</h3>
 <p>₹8,000</p>
+<p>Contact for more details and discount.</p>
 </div>
 
 </div>
@@ -34,13 +50,25 @@
 <section>
 <h2>Purchase Inquiry</h2>
 
-<form action="backend/product_query.php" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<input type="text" name="product" placeholder="Product Name" required>
-<textarea name="message" placeholder="Message"></textarea>
-<button type="submit">Submit</button>
-</form>
+<!-- <div class="inquiry-section">
+	<form action="backend/product_query.php" method="POST">
+		<input type="text" name="name" placeholder="Your Name" required>
+		<input type="email" name="email" placeholder="Email" required>
+		<input type="tel" name="phone" placeholder="Contact Number" required>
+		<input type="text" name="social" placeholder="Social media page (URL)">
+		<input type="text" name="product" placeholder="Product Name" required>
+		<textarea name="message" placeholder="Message"></textarea>
+		<button type="submit">Submit</button>
+	</form> -->
+
+<div class="contact-details">
+	<h3>Contact Details</h3>
+	<p><strong>Contact Person:</strong>Manohar singh</p>
+	<p><strong>Phone:</strong> [+91-70420-93295, 85951-23933]</p>
+	<p><strong>Email:</strong> <a href="mailto:sales@mmsmacsolutions.in">sales@msmacsolutions.in</a>, <a href="mailto:sales.mmsmacsolutions@gmail.com">sales.msmacsolutions@gmail.com</a></p>
+	<p><strong>Social:</strong> <a href="#">Facebook / Instagram / Twitter</a></p>
+    <p><strong>Address:</strong>308A VISHAL BHAWAN 95, NEHRU PLACE, ND-19</p>    
+</div>
 
 </section>
 

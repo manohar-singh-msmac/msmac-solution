@@ -3,11 +3,15 @@
 <head>
 <title>Service & Repair</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .back-button{position:fixed;left:12px;top:12px;padding:8px 12px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px;font-weight:600}
+  .back-button:hover{opacity:0.9}
+</style>
 </head>
 
 <body>
-
-<header><h1>Repair & Support</h1></header>
+    
+<header><a href="index.html" class="back-button">← Back</a><h1>Repair & Support</h1></header>
 
 <ul>
 <li>MacBook Repair</li>
@@ -20,13 +24,22 @@
 <section>
 <h2>Service Request</h2>
 
-<form action="backend/service_query.php" method="POST">
+<!-- <form action="backend/service_query.php" method="POST">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Email" required>
 <input type="text" name="device" placeholder="Device Type">
 <textarea name="issue" placeholder="Describe Issue"></textarea>
 <button type="submit">Submit</button>
-</form>
+</form> -->
+
+<div class="contact-details">
+	<h3>Contact Details</h3>
+	<p><strong>Contact Person:</strong>Manohar singh</p>
+	<p><strong>Phone:</strong> [+91-70420-93295, 85951-23933]</p>
+	<p><strong>Email:</strong> <a href="mailto:sales@mmsmacsolutions.in">sales@msmacsolutions.in</a>, <a href="mailto:sales.mmsmacsolutions@gmail.com">sales.msmacsolutions@gmail.com</a></p>
+	<p><strong>Social:</strong> <a href="#">Facebook / Instagram / Twitter</a></p>
+    <p><strong>Address:</Address>:</strong>308A VISHAL BHAWAN 95, NEHRU PLACE, ND-19</p>
+</div>
 
 </section>
 
