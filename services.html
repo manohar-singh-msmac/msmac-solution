@@ -13,35 +13,39 @@
     
 <header><a href="index.html" class="back-button">← Back</a><h1>Repair & Support</h1></header>
 
-<ul>
-<li>MacBook Repair</li>
-<li>Windows Laptop Repair</li>
-<li>Motherboard Repair</li>
-<li>Data Recovery</li>
-<li>OS Installation</li>
-</ul>
-
-<section>
-<h2>Service Request</h2>
-
-<!-- <form action="backend/service_query.php" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<input type="text" name="device" placeholder="Device Type">
-<textarea name="issue" placeholder="Describe Issue"></textarea>
-<button type="submit">Submit</button>
-</form> -->
-
-<div class="contact-details">
-	<h3>Contact Details</h3>
-	<p><strong>Contact Person:</strong>Manohar singh</p>
-	<p><strong>Phone:</strong> [+91-70420-93295, 85951-23933]</p>
-	<p><strong>Email:</strong> <a href="mailto:sales@mmsmacsolutions.in">sales@msmacsolutions.in</a>, <a href="mailto:sales.mmsmacsolutions@gmail.com">sales.msmacsolutions@gmail.com</a></p>
-	<p><strong>Social:</strong> <a href="#">Facebook / Instagram / Twitter</a></p>
-    <p><strong>Address:</Address>:</strong>308A VISHAL BHAWAN 95, NEHRU PLACE, ND-19</p>
-</div>
-
+<!-- interactive services list with video background -->
+<section class="services-section">
+  <video class="bg-video" autoplay loop muted>
+    <!-- -> replace src with your own video file -> -->
+    <source src="videos/services-bg.mp4" type="video/mp4">
+  </video>
+  <div class="services-content">
+    <div class="services-overview">
+      <h2>Our Services</h2>
+      <div class="card-container" id="servicesContainer">
+        <div class="card" data-service="MacBook Repair">MacBook Repair</div>
+        <div class="card" data-service="Windows Laptop Repair">Windows Laptop Repair</div>
+        <div class="card" data-service="Motherboard Repair">Motherboard Repair</div>
+        <div class="card" data-service="Data Recovery">Data Recovery</div>
+        <div class="card" data-service="OS Installation">OS Installation</div>
+      </div>
+      <div id="serviceDetails" class="service-details">
+        <p>Click on one of the services above to see more information.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+
+
+<section class="contact-details">
+  <h3>Contact Details</h3>
+  <p><strong>Contact Person:</strong> Manohar Singh</p>
+  <p><strong>Phone:</strong> [+91-70420-93295, 85951-23933]</p>
+  <p><strong>Email:</strong> <a href="mailto:sales@mmsmacsolutions.in">sales@msmacsolutions.in</a>, <a href="mailto:sales.msmacsolutions@gmail.com">sales.msmacsolutions@gmail.com</a></p>
+  <p><strong>Social:</strong> <a href="#">Facebook / Instagram / Twitter</a></p>
+  <p><strong>Address:</strong> 308A VISHAL BHAWAN 95, NEHRU PLACE, ND-19</p>
+</section>
+<script src="script.js"></script>
 </body>
 </html>

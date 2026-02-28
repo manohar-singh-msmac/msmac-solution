@@ -69,15 +69,18 @@ transition:0.3s;
 }
 
 .card:hover {
-transform:translateY(-5px);
-box-shadow:0 6px 16px rgba(0,0,0,0.2);
+    transform:translateY(-5px);
+    box-shadow:0 6px 16px rgba(0,0,0,0.2);
+}
+.card {
+    cursor: pointer;
 }
 
-/* Images */
+/* Images inside cards */
 .card img {
-width:100%;
-height:180px;
-object-fit:cover;
+    width:100%;
+    height:180px;
+    object-fit:cover;
 }
 
 /* Button */
@@ -110,12 +113,15 @@ padding:30px 15px;
 
 /* Services Video Background */
 .services-section {
-position:relative;
-width:100%;
-overflow:hidden;
-display:flex;
-justify-content:center;
-align-items:center;
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* create room for video and content */
+    min-height:400px;
+    padding:40px 0;
 }
 
 .bg-video {
@@ -138,6 +144,43 @@ width:100%;
 display:flex;
 flex-direction:column;
 align-items:center;
+}
+
+/* interactive service details */
+.service-details {
+    margin: 20px auto 0; /* top space, auto left/right centers the box */
+    padding: 15px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    text-align: center;
+}
+
+.service-request form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.service-request input,
+.service-request textarea {
+    padding: 8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    width:100%;
+}
+
+.service-request button {
+    background:#0073e6;
+    color:#fff;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.service-request button:hover {
+    opacity:0.9;
 }
 
 /* Owner Section */
