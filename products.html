@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Products</title>
+<title>Products | M.S. Mac Solution</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Browse MacBook Pro, Windows laptops, accessories and SSDs available at M.S. Mac Solution, Nehru Place, Delhi.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-<style>
-  .back-button{position:fixed;left:12px;top:12px;padding:8px 12px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px;font-weight:600}
-  .back-button:hover{opacity:0.9}
-</style>
 </head>
 
 <body>
 
 <header>
-  <a href="index.html" class="back-button"> ← Back</a>
-  <h1>Products</h1>
+
+<div class="logo-container">
+<img src="images/Logo copy.png" alt="M.S. Mac Solution Logo">
+</div>
+
+<h1>M.S. Mac Solution</h1>
+
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+<nav id="mainNav">
+<a href="index.html">Home</a>
+<a href="products.html" class="active">Products</a>
+<a href="services.html">Services</a>
+</nav>
+
 </header>
 
 <div class="card-container">
 
 <div class="card">
-<img src="images/products/macbook.jpg">
+<img src="images/products/macbook.jpg" alt="MacBook Pro" loading="lazy">
 <h3>MacBook Pro</h3>
 <p>Contact for more details, price and discount.</p>
 </div>
 
 <div class="card">
-<img src="images/products/windows.jpg">
+<img src="images/products/windows.jpg" alt="Windows laptop" loading="lazy">
 <h3>Windows Laptop</h3>
 <p>Contact for more details, price and discount.</p>
 </div>
 
 <div class="card">
-<img src="images/products/accessory.jpg">
+<img src="images/products/accessory.jpg" alt="Laptop accessories" loading="lazy">
 <h3>Accessories</h3>
 <p>Contact for more details, price and discount.</p>
 </div>
 
 <div class="card">
-<img src="images/products/ssd.jpg">
+<img src="images/products/ssd.jpg" alt="1TB SSD" loading="lazy">
 <h3>SSD 1TB</h3>
 <p>Contact for more details, price and discount.</p>
 </div>
@@ -49,14 +65,22 @@
 
 <div class="contact-details">
 	<h3>Contact Details</h3>
-	<p><strong>Contact Person:</strong>Manohar singh</p>
-	<p><strong>Phone:</strong> [+91-70420-93295, 85951-23933]</p>
-	<p><strong>Email:</strong> <a href="mailto:sales@mmsmacsolutions.in">sales@msmacsolutions.in</a>, <a href="mailto:sales.mmsmacsolutions@gmail.com">sales.msmacsolutions@gmail.com</a></p>
+	<p><strong>Contact Person:</strong> Manohar Singh</p>
+	<p><strong>Phone:</strong> <a href="tel:+917042093295">+91-70420-93295</a>, <a href="tel:+918595123933">85951-23933</a></p>
+	<p><strong>Email:</strong> <a href="mailto:sales@msmacsolutions.in">sales@msmacsolutions.in</a>, <a href="mailto:sales.msmacsolutions@gmail.com">sales.msmacsolutions@gmail.com</a></p>
 	<p><strong>Social:</strong> <a href="#">Facebook / Instagram / Twitter</a></p>
-    <p><strong>Address:</strong>308A VISHAL BHAWAN 95, NEHRU PLACE, ND-19</p>    
+    <p><strong>Address:</strong> 308A Vishal Bhawan, 95 Nehru Place, New Delhi - 110019</p>
 </div>
 
 </section>
+
+<a href="https://wa.me/917042093295" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<footer>
+<p>&copy; 2026 M.S. Mac Solution</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

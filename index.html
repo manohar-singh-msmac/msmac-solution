@@ -2,7 +2,13 @@
 <html>
 <head>
 <title>M.S. Mac Solution</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="M.S. Mac Solution - Professional Mac & Windows repair, chip-level diagnostics, and IT support in Nehru Place, Delhi.">
+<link rel="icon" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,8 +22,10 @@
 
 <h1>M.S. Mac Solution</h1>
 
-<nav>
-<a href="index.html">Home</a>
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+<nav id="mainNav">
+<a href="index.html" class="active">Home</a>
 <a href="products.html">Products</a>
 <a href="services.html">Services</a>
 </nav>
@@ -58,30 +66,12 @@ Our goal is to deliver fast, dependable, and affordable IT solutions for individ
 
 </section>
 
-<!-- <section>
-<h2>About Us</h2>
-
-<div class="owner-card">
-
-<img src="images/owner.jpg" alt="Owner Photo">
-
-<h3>Manohar Singh</h3>
-<p class="role">Founder & Lead Technician</p>
-
-<p class="about-text">
-M.S. Mac Solution provides professional repair and technical support services for Mac and Windows systems. 
-With years of hands-on experience in hardware repair, chip-level diagnostics, and software solutions, 
-we focus on reliable service, transparent pricing, and customer satisfaction.
-</p>
-
-</div>
-</section> -->
-
 <!-- SERVICES WITH VIDEO FIRST -->
 <section class="services-section">
 
-<video autoplay muted loop playsinline class="bg-video">
+<video autoplay muted loop playsinline class="bg-video" poster="images/services/mac-repair.jpg">
 <source src="videos/services-bg.mp4" type="video/mp4">
+Your browser does not support the background video.
 </video>
 
 <div class="services-content">
@@ -90,25 +80,25 @@ we focus on reliable service, transparent pricing, and customer satisfaction.
 <div class="card-container">
 
 <div class="card">
-<img src="images/services/mac-repair.jpg">
+<img src="images/services/mac-repair.jpg" alt="MacBook repair service" loading="lazy">
 <h3>MacBook Repair</h3>
 <p>Expert diagnosis and repair for all MacBook models including hardware, macOS, and performance issues.</p>
 </div>
 
 <div class="card">
-<img src="images/services/windows-repair.jpg">
+<img src="images/services/windows-repair.jpg" alt="Windows laptop repair service" loading="lazy">
 <h3>Windows Laptop Repair</h3>
 <p>Complete troubleshooting and repair services for Windows laptops and desktops.</p>
 </div>
 
 <div class="card">
-<img src="images/services/chip-repair.jpg">
+<img src="images/services/chip-repair.jpg" alt="Chip level motherboard repair" loading="lazy">
 <h3>Chip Level Repair</h3>
 <p>Advanced motherboard-level repair for power faults, short circuits, and component failures.</p>
 </div>
 
 <div class="card">
-<img src="images/services/software.jpg">
+<img src="images/services/software.jpg" alt="Software installation service" loading="lazy">
 <h3>Software Installation</h3>
 <p>Operating system installation, updates, drivers, and performance optimization.</p>
 </div>
@@ -125,13 +115,13 @@ we focus on reliable service, transparent pricing, and customer satisfaction.
 <div class="card-container">
 
 <div class="card">
-<img src="images/products/macbook.jpg">
+<img src="images/products/macbook.jpg" alt="MacBook Pro" loading="lazy">
 <h3>MacBook Pro</h3>
 <p>Professional Apple Laptop</p>
 </div>
 
 <div class="card">
-<img src="images/products/windows.jpg">
+<img src="images/products/windows.jpg" alt="Windows laptop" loading="lazy">
 <h3>Windows Laptop</h3>
 <p>High performance Windows Laptop</p>
 </div>
@@ -142,9 +132,40 @@ we focus on reliable service, transparent pricing, and customer satisfaction.
 
 </section>
 
+<section class="testimonials">
+<h2>What Customers Say</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"My MacBook wouldn't turn on after a spill. They fixed the logic board in two days when Apple wanted me to buy a new one."</p>
+<p class="author">— Rohit S., Nehru Place</p>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Honest pricing and quick turnaround on my Windows laptop's screen replacement. Highly recommend for chip-level repairs."</p>
+<p class="author">— Priya M., Okhla</p>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Recovered three years of client data from a drive I thought was dead. Professional and transparent throughout."</p>
+<p class="author">— Ankit V., South Delhi</p>
+</div>
+
+</div>
+
+</section>
+
+<a href="https://wa.me/917042093295" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
 <footer>
 <p>© 2026 M.S. Mac Solution</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
